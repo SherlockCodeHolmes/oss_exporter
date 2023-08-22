@@ -1,0 +1,73 @@
+aliyun:
+  access_key: 
+  access_secret: 
+  region:
+    - region_name: shenzhen
+      endpoint: metrics.cn-shenzhen.aliyuncs.com
+      dc:
+        - dc_name: shenzhen_stream01
+          buckets: [sz-hy-stream-record-1, sz-hy-stream-record-2, sz-hy-stream-record-3, hy-bj-produce-stream01-record05, hy-bj-produce-stream01-record06]
+        - dc_name: shenzhen_xinling01
+          buckets: [szcmcc-acloud-xinling]
+        - dc_name: shenzhen_xinling02
+          buckets: [szcmcc2-acloud-xinling]
+    - region_name: hangzhou
+      endpoint: metrics.cn-hangzhou.aliyuncs.com
+      dc:
+        - dc_name: hangzhou_stream01
+          buckets: [hz-hy-stream-record-1, hz-hy-stream-record-2, hz-hy-stream-record-3, hz-hy-stream-record-4, hy-bj-produce-stream01-record07]
+        - dc_name: hangzhou_stream02
+          buckets: [hz-hy-stream2-record-1, hz-hy-stream2-record-2, hz-hy-stream2-record-3]
+    - region_name: chengdu
+      endpoint: metrics.cn-chengdu.aliyuncs.com
+      dc:
+        - dc_name: chengdu_stream01
+          buckets: [hy-cd-produce-stream01-record01, hy-cd-produce-stream01-record02, hy-cd-produce-stream01-record03]
+    - region_name: beijing
+      endpoint: metrics.cn-beijing.aliyuncs.com
+      dc:
+        - dc_name: chengdu_stream01
+          buckets: [hy-bj-produce-stream01-record01, hy-bj-produce-stream01-record02]
+        - dc_name: beijing_stream01
+          buckets: [hy-bj-produce-stream01-record03, hy-bj-produce-stream01-record04,hy-bj-produce-stream01-record07]
+    - region_name: shanghai
+      endpoint: metrics.cn-shanghai.aliyuncs.com
+      dc:
+        - dc_name: hangzhou_stream02
+          buckets: [sh-produce-stream01-record01, sh-produce-stream01-record02]
+    - region_name: wulanchabu
+      endpoint: metrics.cn-wulanchabu.aliyuncs.com
+      dc:
+        - dc_name: beijing_stream01
+          buckets: [wlcb-produce-stream01-record01, wlcb-produce-stream01-record02, wlcb-produce-stream01-record03]
+
+
+# yidongyun_global:
+#   access_key:
+#   access_secret:
+#   region:
+#     - region_name:
+#       endpoint:
+#       dc:
+#         - dc_name:
+#           buckets: []
+
+yidongyun_hangyan:
+  - region_name: chongqing
+    access_key: 
+    access_secret: 
+    endpoint: eos-chongqing-2.cmecloud.cn
+    dc:
+      - dc_name: chongqing_stream01
+        buckets: [cq-produce-stream01-record01, cq-produce-stream01-record02]
+
+heyingyun:
+  access_key: 
+  access_secret: 
+  region:
+    - region_name: wuxi
+      endpoint: cidc-rp-12.joint.cmecloud.cn
+      project_id: ca0a12122c874827be193895db49fd7d
+      dc:
+        - dc_name: wuxi_stream01
+          buckets: [wx-produce-stream01-record01, wx-produce-stream01-record02]
